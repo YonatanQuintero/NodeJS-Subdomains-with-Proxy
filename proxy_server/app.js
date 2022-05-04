@@ -2,12 +2,12 @@ const express = require('express')
 const { createProxyMiddleware } = require('http-proxy-middleware')
 
 const options = {
-    target: 'https://investorcenter.company',
+    target: 'https://mydomain.com',
     changeOrigin: true,
     router: {
-        'investorcenter.company': 'http://localhost:5000',
-        'app.investorcenter.company': 'http://localhost:5000',
-        'admin.investorcenter.company': 'http://localhost:5001'
+        'mydomain.com': 'http://localhost:5000',
+        'app.mydomain.com': 'http://localhost:5000',
+        'admin.mydomain.com': 'http://localhost:5001'
     }
 }
 
