@@ -1,0 +1,16 @@
+{
+  "name": "http_proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "(nodemon proxy_server/app.js) & (nodemon admin_dev/app.js) & (nodemon app_dev/app.js)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
